@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from flask import Flask, jsonify
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -12,4 +12,4 @@ def fib(x):
 	return str(b)
 
 if __name__ == '__main__':
-	app.run()
+	app.run(port=8000)
